@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+
+  <style>
+    /* Reset browser defaults for consistent styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Page-wide styles */
+    html, body {
+      height: 100%;
+      font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column; /* stack navbar on top, content in middle */
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Navigation bar container */
+    nav {
+      position: absolute; /* keeps it pinned at the top */
+      top: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.05); /* semi-transparent bar */
+      backdrop-filter: blur(10px); /* glass-like blur effect */
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Navigation links */
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover effect for nav links */
+    nav a:hover {
+      color: #66c2ff; /* subtle blue accent on hover */
+    }
+
+    /* Main heading */
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer text */
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Simple top navigation bar -->
+  <nav>
+    <!-- Replace these links later with your actual page URLs -->
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main visible content -->
+  <h1>Hello World.</h1>
+
+  <!-- Footer text -->
+  <footer>© 2025 Your Name</footer>
+</body>
+</html>
