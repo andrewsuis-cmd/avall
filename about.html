@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>About</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body {
@@ -70,15 +70,16 @@
     <a href="contact.html">Contact</a>
   </nav>
   <main>
-    <h1>Hello World.</h1>
+    <h1>About</h1>
     <textarea id="textBox" placeholder="Type your text here..."></textarea>
   </main>
   <footer>© 2025 Your Name</footer>
   <script>
     const textBox = document.getElementById("textBox");
-    textBox.value = localStorage.getItem("savedText") || "";
+    const key = "savedText_" + "About".toLowerCase();
+    textBox.value = localStorage.getItem(key) || "";
     textBox.addEventListener("input", () => {
-      localStorage.setItem("savedText", textBox.value);
+      localStorage.setItem(key, textBox.value);
     });
   </script>
 </body>
